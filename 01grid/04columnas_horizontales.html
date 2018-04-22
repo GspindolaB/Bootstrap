@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Columnas alineadas horizontalmente</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .row>div {
+            background: #f2f2f2;
+            border: 1px solid gainsboro;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-4">Columna # 1</div>
+            <div class="col-4">Columna # 2</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4">Columna # 1</div>
+            <div class="col-4">Columna # 2</div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-4">Columna # 1</div>
+            <div class="col-4">Columna # 2</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-4">Columna # 1</div>
+            <div class="col-4">Columna # 2</div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-4">Columna # 1</div>
+            <div class="col-4">Columna # 2</div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

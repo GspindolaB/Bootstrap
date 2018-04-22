@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Offseting</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .row {
+            background: #e8e8e8;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .columna {
+            background: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #4d5061;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="columna col-auto offset-1">Columna</div>
+        </div>
+        <div class="row">
+            <div class="columna col-4 offset-4">Columna</div>
+        </div>
+        <div class="row">
+            <div class="columna col-auto offset-1">Columna</div>
+            <div class="columna col-auto offset-1">Columna</div>
+        </div>
+        <div class="row">
+            <div class="columna col-4 offset-1 offset-md-4 offset-lg-8">Columna</div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

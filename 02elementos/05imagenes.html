@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes y figures</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .columna {
+            margin-top: 20px;
+            /*
+            background: #f2f2f2;
+            border: 1px solid #424242;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-6 columna">
+                <img class="img-fluid rounded-circle" src="http://lorempixel.com/800/800/" alt="">
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-6 columna">
+                <img class="img-fluid float-left img-thumbnail" src="http://lorempixel.com/200/200/" alt="">
+                <img class="img-fluid float-right img-thumbnail" src="http://lorempixel.com/200/200/" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 columna">
+                <figure class="figure">
+                    <img class="img-fluid rounded" src="http://lorempixel.com/400/400/" alt="">
+                    <figcaption class="figure-caption">
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

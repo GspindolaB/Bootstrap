@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Columnas anidadas</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .container{
+            margin-top: 20px;
+        }
+        .row{
+            background: #e8e8e8;
+        }
+        .columna{
+            background: #f2f2f2;
+            text-align: center;
+            border: 1px solid #4d5061;
+        }
+        .columna-interior{
+            background: #e8e8e8;
+            border: 1px solid #4d5061;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="columna col-md-6">
+            Columna # 1
+            <div class="row">
+                <div class="col columna-interior">
+                    Columna 1
+                    <div class="row">
+                        <div class="col-4 columna-interior">Columna 1</div>
+                        <div class="col-4 columna-interior">Columna 2</div>
+                    </div>
+                </div>
+                <div class="col columna-interior">
+                    Columna 2
+                    <div class="row align-items-end">
+                            <div class="col-6 columna-interior">Columna 1</div>
+                            <div class="col-6 columna-interior">Columna 2</div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="columna col-md-6">
+                Columna # 2
+                <div class="row justify-content-around">
+                    <div class="col-4 columna-interior">Columna 1</div>
+                    <div class="col-4 columna-interior">Columna 2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

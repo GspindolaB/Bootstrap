@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crousel (Slider / Slideshow)</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="carousel slide" id="principal-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#principal-carousel" data-slide-to="0"></li>
+                        <li data-target="#principal-carousel" data-slide-to="1"></li>
+                        <li data-target="#principal-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/carousel1.jpg" alt="Carousel 1" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/carousel2.jpg" alt="Carousel 1" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/carousel3.jpg" alt="Carousel 1" class="img-fluid">
+                        </div>
+                    </div>
+                    <a href="#principal-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a href="#principal-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 mt-3">
+                <div class="carousel slide" id="principal-carousel2" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#principal-carousel2" data-slide-to="0"></li>
+                        <li data-target="#principal-carousel2" data-slide-to="1"></li>
+                        <li data-target="#principal-carousel2" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption d-block">
+                                <h3>Carousel 1</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sed.</p>
+                            </div>
+                            <img src="../img/carousel1.jpg" alt="Carousel 1" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-block">
+                                <h3>Carousel 2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sed.</p>
+                            </div>
+                            <img src="../img/carousel2.jpg" alt="Carousel 1" class="img-fluid">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-block">
+                                <h3>Carousel 3</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sed.</p>
+                            </div>
+                            <img src="../img/carousel3.jpg" alt="Carousel 1" class="img-fluid">
+                        </div>
+                    </div>
+                    <a href="#principal-carousel2" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a href="#principal-carousel2" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span><span></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

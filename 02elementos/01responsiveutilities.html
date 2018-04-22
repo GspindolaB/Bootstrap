@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive utilities</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .columna {
+            background: #2192fb;
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Eato se va a mostrar cuando el tamaño del dispositivo sea extra pequeño -->
+            <div class="columna col d-block d-sm-none">XS - Extra Small</div>
+            <!-- Cuando sea extra pequeño no se mostrara, se mostrara al ser pequeño y desaparecera al ser mediano  -->
+            <div class="columna col d-none d-sm-block d-md-none">SM - Small</div>
+            <!-- Al ser XS y SM no se mostrara, se mostrara en su tamaño MD y desaparecera para LG y XL -->
+            <div class="columna col d-none d-md-block d-lg-none">MD - Mediano</div>
+            <!-- Al ser XS, SM y MD no se mostrara, se mostrara en su tamaño LG y desaparecera para XL -->
+            <div class="columna col d-none d-lg-block d-xl-none">LG - Large</div>
+            <!-- Al ser XS y SM no se mostrara, se mostrara en su tamaño MD y desaparecera para LG y XL -->
+            <div class="columna col d-none d-xl-block">XL - Extra Large</div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

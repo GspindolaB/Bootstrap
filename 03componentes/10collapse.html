@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <p class="text-center">
+                    <a href="#bloque1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque1" class="btn btn-primary">Bloque 1</a>
+                </p>
+                <div id="bloque1" class="collapse">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Título</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab hic esse quas iste tenetur
+                                consectetur culpa quam quae? Cumque dolorem quas magni rerum voluptatum voluptatibus soluta
+                                quo repellendus officiis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-center">
+                    <a href="#bloque2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque1" class="btn btn-primary">Bloque 2</a>
+                </p>
+                <div id="bloque2" class="">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2>Título</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab hic esse quas iste tenetur
+                                consectetur culpa quam quae? Cumque dolorem quas magni rerum voluptatum voluptatibus soluta
+                                quo repellendus officiis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <div id="acordeon">
+                    <div class="card">
+                        <div class="card-header" id="header1">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    Contenido # 1
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse1" class="collapse show" aria-labelledby="header1" data-parent="#acordeon">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, nemo illum obcaecati sunt maiores velit voluptatem labore nihil
+                                deleniti porro necessitatibus! Facilis quasi est enim officiis vel nihil tenetur rerum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="header2">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    Contenido # 2
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="header2" data-parent="#acordeon">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, nemo illum obcaecati sunt maiores velit voluptatem labore nihil
+                                deleniti porro necessitatibus! Facilis quasi est enim officiis vel nihil tenetur rerum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="header3">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    Contenido # 3
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse3" class="collapse" aria-labelledby="header3" data-parent="#acordeon">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, nemo illum obcaecati sunt maiores velit voluptatem labore nihil
+                                deleniti porro necessitatibus! Facilis quasi est enim officiis vel nihil tenetur rerum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
