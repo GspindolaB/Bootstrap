@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variantes de Input</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Tamaños inputs</h2>
+                <hr>
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre:" class="form-control">
+                        <label for="correo">Correo</label>
+                        <input type="email" name="correo" id="correo" placeholder="Correo:" class="form-control form-control-lg">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password:" class="form-control form-control-sm">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Estados de ReadOnly y Disabled</h2>
+                <hr>
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="No se puede modificar este texto" class="form-control" readonly>
+                        <label for="correo">Correo</label>
+                        <input type="email" name="correo" id="correo" placeholder="Solo lectura" class="form-control" disabled>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password:" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
