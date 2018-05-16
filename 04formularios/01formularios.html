@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3 justify-content-center">
+            <div class="col-12">
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre:">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Contraseña</label>
+                        <input type="password" class="form-control" name="pass" id="pass" placeholder="Contraseña:">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="opcion">País:</label>
+                        <select class="form-control" name="opcion" id="opcion">
+                            <option value="mexico">México</option>
+                            <option value="usa">Estados Unidos</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                            <input type="radio" name="sexo" id="hombre" class="form-check-input mr-2">Hombre
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                                <input type="radio" name="sexo" id="mujer" class="form-check-input mr-2">Mujer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label for="" class="form-check-label">
+                                    <input type="checkbox" name="terminos" id="terminos" class="form-check-input mr-2">Terminos y condiciones
+                            </label>
+                    </div>
+                    <button class="btn btn-secondary text-center mt-3" type="submit">Enviar formulario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
