@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ventanas Modales</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="text-center">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal">Abrir Ventan Modal</button>
+                </div>
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Iniciar Sesión</h3>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                    <span class="badge badge-danger" aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre:">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass">Contraseña</label>
+                                        <input type="password" class="form-control" name="pass" id="pass" placeholder="Contraseña:">
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-success">Inicio</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center">
+                    <button class="btn btn-secondary" data-toggle="modal" data-target="#modal-grid">Abrir Ventana Modal con Grid</button>
+                </div>
+                <div class="modal fade" id="modal-grid" tabindex="-1" role="dialog" aria-labelledby="modal-grid" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">GRID</h3>
+                                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                        <span class="badge badge-danger" aria-hidden="true">&times;</span>
+                                    </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat tempore enim ex reiciendis laudantium nemo quasi consequatur omnis? Distinctio, animi ratione! Voluptate dolor nemo quam vitae voluptatum
+                                                corporis aperiam?</p>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repellat tempore enim ex reiciendis laudantium nemo quasi consequatur omnis? Distinctio, animi ratione! Voluptate dolor nemo quam vitae voluptatum
+                                                corporis aperiam?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="text-center">
+                                    <button class="btn btn-info">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
