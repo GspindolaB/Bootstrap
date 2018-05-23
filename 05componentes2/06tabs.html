@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabs</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-12">
+                <hr>
+                <h3>Tabs con Nav</h3>
+                <nav class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="col-12">
+                <hr>
+                <h3>Tabs con UL y Pills</h3>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <hr>
+                <h3>Tabs con UL y Pills 100%</h3>
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <hr>
+                <h3>Meú desplegable con dropdown</h3>
+                <ul class="nav nav-pills">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Categoria 1</a>
+                            <a href="#" class="dropdown-item">Categoria 2</a>
+                            <a href="#" class="dropdown-item">Categoria 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Proximamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <h3>Tabs con Nav</h3>
+                <nav class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#tab1" class="nav-link active" data-toggle="tab">Tab 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab2" class="nav-link" data-toggle="tab">Tab 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab3" class="nav-link" data-toggle="tab">Tab 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab4" class="nav-link" data-toggle="tab">Tab 4</a>
+                    </li>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1" role="tabpanel">
+                        <h3>Panel 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem iste eligendi ullam eveniet dolore delectus quia sequi, molestias sapiente perferendis temporibus fugiat saepe laborum dolorum, minima quo similique accusamus? Quasi!</p>
+                    </div>
+                    <div class="tab-pane" id="tab2" role="tabpanel">
+                        <h3>Panel 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem iste eligendi ullam eveniet dolore delectus quia sequi, molestias sapiente perferendis temporibus fugiat saepe laborum dolorum, minima quo similique accusamus? Quasi!</p>
+                    </div>
+                    <div class="tab-pane" id="tab3" role="tabpanel">
+                        <h3>Panel 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem iste eligendi ullam eveniet dolore delectus quia sequi, molestias sapiente perferendis temporibus fugiat saepe laborum dolorum, minima quo similique accusamus? Quasi!</p>
+                    </div>
+                    <div class="tab-pane" id="tab4" role="tabpanel">
+                        <h3>Panel 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem iste eligendi ullam eveniet dolore delectus quia sequi, molestias sapiente perferendis temporibus fugiat saepe laborum dolorum, minima quo similique accusamus? Quasi!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
