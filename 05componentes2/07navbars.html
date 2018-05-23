@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbars</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-info fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Menú</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menú de Navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item "><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorias
+                            <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                <a href="#" class="dropdown-item">HTML</a>
+                        <a href="#" class="dropdown-item">CSS</a>
+                        <a href="#" class="dropdown-item">JS</a>
+                        <a href="#" class="dropdown-item">PHP</a>
+            </div>
+            </a>
+            </li>
+            <li class="nav-item "><a href="#" class="nav-link">Nosotros</a></li>
+            <li class="nav-item "><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+            <form action="" class="form-inline my-2 my-lg-0">
+                <input type="text" name="" id="" class="form-control mr-sm-2" placeholder="Buscar:" aria-label="Buscar">
+                <button type="submit" class="btn btn-success my-sm-0">Buscar</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="jumbotron">
+                    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, repudiandae.</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam numquam quibusdam cumque sapiente natus voluptates aperiam ad rem! Ipsa, alias? Rerum omnis iste nostrum minima expedita facilis illo quis nisi?</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 1000px;">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa sit harum error unde sunt, illo perspiciatis aliquid beatae possimus aut ipsa, explicabo porro laboriosam cumque. Voluptatibus hic soluta odio.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
