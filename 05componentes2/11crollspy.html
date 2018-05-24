@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scrollspy</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        body {
+            position: relative;
+            padding-top: 60px;
+        }
+        
+        .fm-nav a {
+            color: #fff;
+            padding: 15px;
+        }
+        
+        .fm-nav .active,
+        .fm-nav a:hover {
+            background: rgba(255, 255, 255, .1);
+        }
+        
+        .section {
+            margin-bottom: 500px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#fm-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="fm-nav">
+                    <ul class="fm-nav nav fixed-top navbar-inverse bg-primary">
+                        <li class="nav-item"><a href="#seccion1" class="nav-link">Sección # 1</a></li>
+                        <li class="nav-item"><a href="#seccion2" class="nav-link">Sección # 2</a></li>
+                        <li class="nav-item"><a href="#seccion3" class="nav-link">Sección # 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row section" id="seccion1">
+            <div class="col-12 columna">
+                <h2>Sección 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident, ea, enim quasi odio nam nemo earum, laborum rerum vel neque quod fuga vero nihil labore vitae ex cupiditate. Impedit!</p>
+            </div>
+        </div>
+        <div class="row section" id="seccion2">
+            <div class="col-12 columna">
+                <h2>Sección 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident, ea, enim quasi odio nam nemo earum, laborum rerum vel neque quod fuga vero nihil labore vitae ex cupiditate. Impedit!</p>
+            </div>
+        </div>
+        <div class="row section" id="seccion3">
+            <div class="col-12 columna">
+                <h2>Sección 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae provident, ea, enim quasi odio nam nemo earum, laborum rerum vel neque quod fuga vero nihil labore vitae ex cupiditate. Impedit!</p>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
