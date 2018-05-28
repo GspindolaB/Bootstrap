@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bordes</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .caja {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 20px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-6">
+                <div class="caja bg-light"></div>
+                <div class="caja bg-light border-0"></div>
+                <div class="caja bg-light border-top-0"></div>
+                <div class="caja bg-light border-right-0"></div>
+                <div class="caja bg-light border-left-0"></div>
+                <div class="caja bg-light border-bottom-0"></div>
+            </div>
+            <div class="col-6">
+                <div class="caja border-danger"></div>
+                <div class="caja border-dark"></div>
+                <div class="caja border-info"></div>
+                <div class="caja border-light"></div>
+                <div class="caja border-primary"></div>
+                <div class="caja border-secondary"></div>
+                <div class="caja border-success"></div>
+                <div class="caja border-warning"></div>
+            </div>
+            <div class="col-6">
+                <div class="caja bg-success border-danger rounded"></div>
+                <div class="caja bg-success border-danger rounded-bottom"></div>
+                <div class="caja bg-success border-danger rounded-left"></div>
+                <div class="caja bg-success border-danger rounded-right"></div>
+                <div class="caja bg-success border-danger rounded-top"></div>
+                <div class="caja bg-success border-danger rounded-circle"></div>
+                <div class="caja bg-success border-danger rounded-0"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
