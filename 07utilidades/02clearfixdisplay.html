@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clearfix y Display</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .caja {
+            height: 100px;
+            width: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="bg-primary text-white p-2 mb-4">Elemento de tipo bloque</div>
+                <span class="bg-success text-white d-inline-block p-2 mb-4">Elemento de tipo línea (convertidos a inline-block)</span>
+                <span class="bg-success text-white d-inline-block p-2 mb-4">Elemento de tipo línea (convertidos a inline-block)</span>
+                <div class="bg-primary text-white d-inline-block p-2 mb-4">Elemento de tipo bloque (convertido a inline-block)</div>
+                <div class="bg-success text-white p-2 mb-4 d-block">Elemento de tipo línea (convertido a bloque)</div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="bg-primary clearfix">
+                    <div class="caja d-inline-block float-left"></div>
+                    <div class="caja d-inline-block float-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
