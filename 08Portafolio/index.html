@@ -13,6 +13,70 @@
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <!--LOGOTI´P-->
+            <div class="nav row rounded-top align-items-stretch justify-content-between">
+                <div class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <h2>Guillermo Spindola</h2>
+                    <span class="icono icon-dot"></span>
+                    <p>Analista de Sistemas</p>
+                </div>
+                <!--Menú-->
+                <nav class="col-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
+                    <a href="" class="c-1 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Portafolio</span>
+                            <i class="icono icon-briefcase"></i>
+                        </div>
+                    </a>
+                    <a href="" class="c-2 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Acerca de</span>
+                            <i class="icono icon-user"></i>
+                        </div>
+                    </a>
+                    <a href="" class="c-3 d-flex align-items-center">
+                        <div class="d-flex flex-column text-center">
+                            <span>Contacto</span>
+                            <i class="icono icon-mail"></i>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+            <!--SLIDER-->
+            <div class="row slider">
+                <div class="col">
+                    <div class="carousel slide" id="slider" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="slider" data-slide-to="0" class="active"></li>
+                            <li data-target="slider" data-slide-to="1"></li>
+                            <li data-target="slider" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/slide1.jpg" alt="slide 1" class="d-block img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slide2.jpg" alt="slide 2" class="d-block img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slide3.jpg" alt="slide 3" class="d-block img-fluid">
+                            </div>
+                        </div>
+                        <a href="#slider" class="carousel-control-prev" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a href="#slider" class="carousel-control-next" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
