@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crousel (Slider / Slideshow)</title>
+    <!-- Se agregan los estilos de bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <style>
+        .contenedor {
+            margin-bottom: 20px;
+            background: #0275d8;
+            color: #fff;
+        }
+        
+        .contenedor div {
+            background: rgba(255, 255, 255, .2);
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row my-4">
+            <div class="col">
+                <h4>Fill</h4>
+                <hr>
+                <p>.flex-fill</p>
+                <div class="contenedor d-flex text-center">
+                    <!--La clase flex-fill divide el espacio disponible entre todos los contenedores-->
+                    <div class="flex-fill">Caja 1</div>
+                    <div class="flex-fill bg-dark">Caja 2</div>
+                    <div class="flex-fill">Caja 3</div>
+                </div>
+                <!--
+                    Variantes:
+                    .flex-fill
+                    .flex-sm-fill
+                    .flex-md-fill
+                    .flex-lg-fill
+                    .flex-xl-fill
+                -->
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <h4>Grow</h4>
+                <hr>
+                <p>.flex-grow</p>
+                <div class="contenedor d-flex">
+                    <!--La clase flex-grow abarca todo el contenido que la caja pueda abarcar-->
+                    <div class="flex-grow-1 bg-dark">Caja 1</div>
+                    <div class="flex">Caja 2</div>
+                    <div class="flex">Caja 3</div>
+                </div>
+                <!--
+                    Variantes:
+                    .flex-shrink-0
+                    .flex-shrink-1
+                    .flex-shrink-sm-0
+                    .flex-shrink-sm-1
+                    .flex-shrink-md-0
+                    .flex-shrink-md-1
+                    .flex-shrink-lg-0
+                    .flex-shrink-lg-1
+                    .flex-shrink-xl-0
+                    .flex-shrink-xl-1
+                -->
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col">
+                <h4>Shrink</h4>
+                <hr>
+                <p>.flex-shrink</p>
+                <div class="contenedor d-flex">
+                    <!--La clase flex-shrink se hará mas pequeña solo di clocamos flex-shrink-1-->
+                    <div class="w-100 flex-grow-0 bg-dark">Caja 1</div>
+                    <div class="flex-shrink-0">Lorem ipsum dolor sit.</div>
+                    <div class="flex-shrink-0">Lorem ipsum dolor sit.</div>
+                </div>
+                <!--
+                        Variantes:
+                        .flex-grow-0
+                        .flex-grow-1
+                        .flex-grow-sm-0
+                        .flex-grow-sm-1
+                        .flex-grow-md-0
+                        .flex-grow-md-1
+                        .flex-grow-lg-0
+                        .flex-grow-lg-1
+                        .flex-grow-xl-0
+                        .flex-grow-xl-1
+                    -->
+            </div>
+        </div>
+    </div>
+    <!-- Se agrega JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Se agrega popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- Se agrega el JS de Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
